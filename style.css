@@ -1,0 +1,43 @@
+body {
+  font-family: Arial, sans-serif;
+  max-width: 420px;
+  margin: 0 auto;
+  padding: 16px;
+}
+input,
+select,
+button,
+textarea {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  box-sizing: border-box;
+}
+
+button {
+  background: #0a7d5a;
+  color: white;
+  border: none;
+  font-weight: bold;
+}
+
+textarea {
+  height: 100px;
+  font-family: Arial, sans-serif;
+}
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+li {
+  background: white;
+  padding: 12px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+}
+
+.hidden {
+  display: none;
+}

@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PulaWise</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>PulaWise</h1>
+
+    <div id="login-box">
+      <h2>Log in</h2>
+      <input type="text" id="username" placeholder="Username" />
+      <input type="password" id="password" placeholder="Password" />
+      <button type="button" id="login-btn">Log in</button>
+      <p id="login-error"></p>
+    </div>
+
+    <div id="app" class="hidden">
+      <h2 id="safe-amount"></h2>
+
+      <form id="entry-form">
+        <input type="number" id="amount" placeholder="Amount (P)" required />
+        <select id="type">
+          <option value="income">Income</option>
+          <option value="expense">Expense</option>
+        </select>
+        <select id="category">
+          <option>Sales</option>
+          <option>Food</option>
+          <option>Transport</option>
+          <option>Airtime/Data</option>
+          <option>Other</option>
+        </select>
+        <button type="submit">Save</button>
+      </form>
+
+      <h2>Entries</h2>
+      <ul id="entry-list"></ul>
+
+      <h2>Scam check</h2>
+      <textarea
+        id="scam-text"
+        placeholder="Paste a suspicious message"
+      ></textarea>
+      <button type="button" id="scam-btn">Check message</button>
+      <p id="scam-result"></p>
+      <ul id="scam-reasons"></ul>
+      <p>This is a simple check and can be wrong.</p>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
